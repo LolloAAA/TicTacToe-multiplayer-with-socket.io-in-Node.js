@@ -1,0 +1,73 @@
+@font-face {
+  font-family: nameFont;
+  src: url(bomber.ttf);
+}
+
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+
+
+body {
+  height: 100%;
+  background: linear-gradient(90deg, #FFFDED 50%, #FAF5FF 50%);
+}
+td {
+  width: 100px;
+  height: 100px;
+}
+#game-layout {
+  margin: 5px auto;
+  background-color: white;
+  border: 2px solid gainsboro;
+  padding: 10px;
+}
+#loading{
+  align: center;
+  max-width:20%;
+  height:auto;
+  animation: rotation 2s infinite linear;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#all {
+  width: 100%;
+  margin: auto;
+}
+#reset-layout {
+  margin: auto;
+}
+.vert {
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+}
+.hori {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+.buttons {
+  background-color: Transparent;
+  border: none;
+  height:100%;
+  width:100%;
+  cursor:pointer;
+}
+#reset {
+  height:100%;
+  width:100%;
+  cursor:pointer;
+  visibility: hidden;
+}
+.name-container{
+  font-family: nameFont;
+  font-size:60px;
+  text-align:center;
+  margin: auto;
+}
+#name1, #name2{
+  margin: auto;
+  height: 50px;
+  width:250px;
+}

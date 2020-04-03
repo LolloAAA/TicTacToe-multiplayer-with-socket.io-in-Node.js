@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+  <table id='all'>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><img src="loading.png" id="loading"></td>
+    </tr>
+    <tr>
+      <td>
+        <div class='name-container' width=50%>
+          <p id='name1'></p>
+          <p id='punteggio1'></p>
+        </div>
+      </td>
+      <td>
+        <table id='game-layout'>
+          <tr>
+            <td><button class="buttons" type="button"></button></td>
+            <td class="vert"><button class="buttons" type="button"></button></td>
+            <td><button class="buttons" type="button"></button></td>
+          </tr>
+          <tr>
+            <td class="hori"><button class="buttons" type="button"></button></td>
+            <td class="vert hori"><button class="buttons" type="button"></button></td>
+            <td class="hori"><button class="buttons" type="button"></button></td>
+          </tr>
+          <tr>
+            <td><button class="buttons" type="button"></button></td>
+            <td class="vert"><button class="buttons" type="button"></button></td>
+            <td><button class="buttons" type="button"></button></td>
+          </tr>
+    </tr>
+  </table>
+  </td>
+  <td>
+    <div class='name-container'>
+      <p id='name2'></p>
+      <p id='punteggio2'></p>
+    </div>
+  </td>
+  </br></br>
+  <table id='reset-layout'>
+    <tr>
+      <td colspan=3><button id="reset" type="button">RESET</button></td>
+    </tr>
+    </tr>
+  </table>
+  </table>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+
+  
+</body>
+
+</html>
